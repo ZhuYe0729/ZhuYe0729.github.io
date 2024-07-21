@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/css/layout.css">
 
 		
-		<title> Hello World -  zhu_ye</title>
+		<title> windows终端美化 -  zhu_ye</title>
 		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
 		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
 		
@@ -333,37 +333,80 @@
 			<img
 				data-src="/assets/Pictures/原神2.jpg"
 				data-sizes="auto"
-				alt="Hello World"
+				alt="windows终端美化"
 				class="lazyload kira-post-cover-image disabled-kira-image"
 			/>
-			<h1>Hello World</h1>
+			<h1>windows终端美化</h1>
 		</div>
 		
 		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
-			<a><i class="kirafont icon-calendar-fill"></i>2024年07月20日</a>
-			<a><i class="kirafont icon-edit-fill"></i>75 字</a>
-			<a><i class="kirafont icon-time-circle-fill"></i>大概 1 分钟</a>
+			<a><i class="kirafont icon-calendar-fill"></i>2024年07月21日</a>
+			<a><i class="kirafont icon-edit-fill"></i>501 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 2 分钟</a>
 		</div>
-		<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+		<h1 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h1><ol>
+<li><p>下载windows terminal</p>
+<blockquote>
+<p>直接微软商店下载即可</p>
+</blockquote>
+</li>
+<li><p>配置windows terminal</p>
+<blockquote>
+<p>可以直接在设置选项中设置，比如背景图片（注意修改合适的不透明度），配色方案等。</p>
+</blockquote>
+</li>
+<li><p>安装和使用Oh My Posh</p>
+<blockquote>
+<p>Oh My Posh 是一个开源的命令行提示工具，用于美化和定制命令行提示符（prompt）。</p>
+<ul>
+<li><p>安装：直接微软商店安装。</p>
+</li>
+<li><p>使用：在命令行中输入<code>$profile</code> 查看 powerShell 的配置文件路径。在该目录下新建<code>Microsoft.PowerShell_profile.ps1</code>文件，填入以下内容即可。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">oh-my-posh init pwsh | Invoke-Expression<br></code></pre></td></tr></table></figure></li>
+</ul>
+</blockquote>
+</li>
+<li><p>安装Nerd Fonts字体</p>
+<blockquote>
+<p>此时直接打开终端会出现乱码，因为目前终端字体不支持图标，因此需要下载Nerd Fonts。</p>
+<ul>
+<li>下载：直接搜索，然后去官网下载喜欢的字体。</li>
+<li>安装：解压缩，然后找到选择合适的细分字体进行点击打开，然后安装。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>使用字体</p>
+<blockquote>
+<p>Nerd 字体安装成功后，我们需要把终端的使用字体配置为我们下载的 Nerd 字体。</p>
+<p>打开 Windows Terminal，使用快捷键 <code>Ctrl+Shift+,</code> 打开 Windows Terminal 的配置文件。</p>
+<p>在 profiles 中加入以下内容即可。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;defaults&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>	<span class="hljs-attr">&quot;font&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span>  <br>		<span class="hljs-attr">&quot;face&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Hack Nerd Font&quot;</span>  <br>	<span class="hljs-punctuation">&#125;</span>  <br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>使用主题</p>
+<blockquote>
+<p>在命令行中输入<code>Get-PoshThemes</code> ，可以看到各个主题的效果，并且在输出内容的最下面可以查看主题预设文件的路径。</p>
+<p>然后配置PowerShell的配置文件。添加<code>--config 预设文件路径</code>。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">oh-my-posh init pwsh --config &#x27;C:\Users\hp\AppData\Local\Programs\oh-my-posh\themes\wholespace.omp.json&#x27; | Invoke-Expression<br></code></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>其他</p>
+<blockquote>
+<p>配置每次新开一个终端，随机输出一行句子。方法：修改PowerShell配置文件，使它执行脚本，随机读取sentences.txt(自定义文件)的一行即可。</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>能够显示各种信息，包括当前全路径、git信息、时间等。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="/assets/docPics/01windows%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/image-20240721190531493.png" alt="美化结果" class="lazyload"></p>
+<p><strong>参考：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://blog.sunguoqi.com/posts/oh-my-posh/">Oh My Posh | Windows Terminal 美化指南 (sunguoqi.com)</a></p>
 
 	</article>
 
 	 
     <div class="kira-post-copyright">
         <strong>Author：</strong>wja<br>
-        <strong>Link：</strong><a href="https://zhuye0729.github.io/2024/07/20/hello-world/" title="https:&#x2F;&#x2F;zhuye0729.github.io&#x2F;2024&#x2F;07&#x2F;20&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;zhuye0729.github.io&#x2F;2024&#x2F;07&#x2F;20&#x2F;hello-world&#x2F;</a><br>
+        <strong>Link：</strong><a href="https://zhuye0729.github.io/2024/07/21/windows%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/" title="https:&#x2F;&#x2F;zhuye0729.github.io&#x2F;2024&#x2F;07&#x2F;21&#x2F;windows终端美化&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;zhuye0729.github.io&#x2F;2024&#x2F;07&#x2F;21&#x2F;windows终端美化&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
         
@@ -378,6 +421,8 @@
 	
 	<div class="kira-post-meta kira-rainbow">
 		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/windows/" rel="tag">windows</a> <a class="kirafont icon-tag-fill -none-link" href="/tags/%E7%BE%8E%E5%8C%96/" rel="tag">美化</a>
 		
 	</div>
 	
